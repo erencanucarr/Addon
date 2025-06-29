@@ -1,3 +1,9 @@
+## **Important Notice (June 2025):** ClearURLs has been fully migrated to **Manifest V3 (MV3)**. All source code, build scripts, and documentation now target MV3; 
+
+Manifest V2 is no longer supported. Make sure you are using a browser version that supports MV3 before installing or building the extension.
+
+##
+
 <a href="https://www.paypal.me/KevinRoebert" target="_blank"><img src="https://raw.githubusercontent.com/KevinRoebert/DonateButtons/master/Paypal.png" alt="Buy Me A Coffee" height="55"></a>
 <a href="https://www.buymeacoffee.com/KevinRoebert" target="_blank"><img src="https://raw.githubusercontent.com/KevinRoebert/DonateButtons/master/BuyMeACoffee.png" alt="Buy Me A Coffee" height="55"></a>
 

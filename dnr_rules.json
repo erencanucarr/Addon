@@ -1,0 +1,46 @@
+[
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://www.amazon.\\1/\\2"
+      }
+    },
+    "condition": {
+      "regexFilter": "https://www\\.amazon\\.([a-z.]+)/([^/?]+/(?:dp|gp/product)/[A-Z0-9]+)/?.*",
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
+  },
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "removeParams": [
+              "utm_source",
+              "utm_medium",
+              "utm_campaign",
+              "utm_term",
+              "utm_content",
+              "utm_name",
+              "fbclid",
+              "gclid",
+              "mc_eid",
+              "ref",
+              "igshid"
+            ]
+          }
+        }
+      }
+    },
+    "condition": {
+      "urlFilter": "|http*://*/*",
+      "resourceTypes": ["main_frame", "sub_frame", "xmlhttprequest"]
+    }
+  }
+]
